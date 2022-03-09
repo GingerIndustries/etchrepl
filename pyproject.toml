@@ -8,7 +8,7 @@ authors = ["GingerIndustries"]
 python = "^3.8"
 requests = "^2.27.1"
 toml = "^0.10.2"
-etchlang = "^0.0.1-alpha.0"
+etchlang = "*"
 
 [tool.poetry.scripts]
 etch = "etchrepl:main"
