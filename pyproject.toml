@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "etchrepl"
-version = "0.1.2"
+version = "0.1.3"
 description = "A repl for Etch. Nothing much to see here."
 authors = ["GingerIndustries"]
 

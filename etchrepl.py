@@ -35,7 +35,7 @@ def main():
     args = parser.parse_args()
     logging.info("Starting")
     if not args.no_update_check:
-        version = versionCheck(ETCH_URL, etch.__version)
+        version = versionCheck(ETCH_URL, etch.__version__)
         replVersion = versionCheck(REPL_URL, __version__)
     else:
         logging.info("Version check disabled.")
