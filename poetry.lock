@@ -19,7 +19,7 @@ unicode_backport = ["unicodedata2"]
 
 [[package]]
 name = "etchlang"
-version = "0.0.1a0"
+version = "0.0.1a4"
 description = "Etch, an easy-to use, high-level, interpreted lang based on Python."
 category = "main"
 optional = false
@@ -29,7 +29,7 @@ python-versions = ">=3.8,<4.0"
 sly = ">=0.4,<0.5"
 
 [package.extras]
-repl = ["etchrepl (==1.0)"]
+repl = ["etchrepl (>=0.0.1,<0.0.2)"]
 
 [[package]]
 name = "idna"
@@ -92,7 +92,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "28fae7c392365cf3800a36ec8dba77077b6943d050784b06809dbe1d661b874d"
+content-hash = "aedbd45067a5f9ea974d6194593e66d696d29efff00ac94f4989e0f41765c049"
 
 [metadata.files]
 certifi = [
@@ -104,8 +104,8 @@ charset-normalizer = [
     {file = "charset_normalizer-2.0.12-py3-none-any.whl", hash = "sha256:6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"},
 ]
 etchlang = [
-    {file = "etchlang-0.0.1a0-py3-none-any.whl", hash = "sha256:de91263589ef92caca72bb4bfe5f83415a8cff1bb700438a5c01aa7ff95b403b"},
-    {file = "etchlang-0.0.1a0.tar.gz", hash = "sha256:6786058e6068eb4a2474e304f12bc9e9652924199e29c60fa6acec5a548cd5cb"},
+    {file = "etchlang-0.0.1a4-py3-none-any.whl", hash = "sha256:ad1c830b9b48a416c55411379db6d4a43eb541085c339984d57b3d97d5602678"},
+    {file = "etchlang-0.0.1a4.tar.gz", hash = "sha256:9200547280c36833d0d0928a5e28fcc9360b9d96edc3826fdde01f82ce4b44b7"},
 ]
 idna = [
     {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
