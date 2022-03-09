@@ -2,7 +2,7 @@
 name = "etchrepl"
 version = "0.0.1"
 description = "A repl for Etch. Nothing much to see here."
-authors = ["GingerIndustries <<>>"]
+authors = ["GingerIndustries"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
