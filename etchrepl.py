@@ -5,7 +5,7 @@ import logging
 import sys
 import argparse
 
-__version__ = "0.1.2"
+__version__ = "0.1.4"
 
 ETCH_URL = "https://raw.githubusercontent.com/GingerIndustries/Etch/main/pyproject.toml"
 REPL_URL = "https://raw.githubusercontent.com/GingerIndustries/etchrepl/main/pyproject.toml"

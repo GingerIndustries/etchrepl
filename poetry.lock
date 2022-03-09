@@ -19,7 +19,7 @@ unicode_backport = ["unicodedata2"]
 
 [[package]]
 name = "etchlang"
-version = "0.0.1a4"
+version = "0.0.2"
 description = "Etch, an easy-to use, high-level, interpreted lang based on Python."
 category = "main"
 optional = false
@@ -29,7 +29,7 @@ python-versions = ">=3.8,<4.0"
 sly = ">=0.4,<0.5"
 
 [package.extras]
-repl = ["etchrepl (>=0.0.1,<0.0.2)"]
+repl = ["etchrepl (>=0.1.3)"]
 
 [[package]]
 name = "idna"
@@ -104,8 +104,8 @@ charset-normalizer = [
     {file = "charset_normalizer-2.0.12-py3-none-any.whl", hash = "sha256:6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"},
 ]
 etchlang = [
-    {file = "etchlang-0.0.1a4-py3-none-any.whl", hash = "sha256:ad1c830b9b48a416c55411379db6d4a43eb541085c339984d57b3d97d5602678"},
-    {file = "etchlang-0.0.1a4.tar.gz", hash = "sha256:9200547280c36833d0d0928a5e28fcc9360b9d96edc3826fdde01f82ce4b44b7"},
+    {file = "etchlang-0.0.2-py3-none-any.whl", hash = "sha256:a0ced484b15d4c864e218913f990a1bf0d21d51e57e0e52fadea475105411fa3"},
+    {file = "etchlang-0.0.2.tar.gz", hash = "sha256:8aa6b8b416d5b400b0634a90f70c703ffe729a6a0e8828a4d7b542e2a28369dd"},
 ]
 idna = [
     {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
