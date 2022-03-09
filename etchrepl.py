@@ -17,7 +17,7 @@ parser.add_argument("--no-update-check", action='store_true', help="Don't check 
 #parser.add_argument("-v", "--verbose", action = "count", help="Increase verbosity", default=0)
 
 
-def versionCheck(url):
+def versionCheck(url, current):
     logging.info("Checking version for package " + url + "...")
     try:
         ver = toml.loads(requests.get(url).text)["tool"]["poetry"]["version"]
@@ -26,7 +26,7 @@ def versionCheck(url):
         logging.debug("An error occured while performing the version check:")
         logging.debug(str(e))
     else:
-        if ver != etch.__version__:
+        if ver != current:
             logging.info("Package " + url + " is out of date!")
             return ver
     return False
@@ -35,8 +35,8 @@ def main():
     args = parser.parse_args()
     logging.info("Starting")
     if not args.no_update_check:
-        version = versionCheck(ETCH_URL)
-        replVersion = versionCheck(REPL_URL)
+        version = versionCheck(ETCH_URL, etch.__version)
+        replVersion = versionCheck(REPL_URL, __version__)
     else:
         logging.info("Version check disabled.")
         version = None
