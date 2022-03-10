@@ -5,7 +5,7 @@ import logging
 import sys
 import argparse
 
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 
 ETCH_URL = "https://raw.githubusercontent.com/GingerIndustries/Etch/main/pyproject.toml"
 REPL_URL = "https://raw.githubusercontent.com/GingerIndustries/etchrepl/main/pyproject.toml"
@@ -59,7 +59,7 @@ def main():
         try:
             i = input(">> ")
         except KeyboardInterrupt:
-            print("Goodbye!")
+            print("\nGoodbye!")
             return
         if i.startswith("/"):
             c = i[1:].split(" ")
@@ -78,8 +78,13 @@ Interpreter commands:
                 if not path.endswith(".etch"):
                     path += ".etch"
                 f = open(path)
-                interpreter.run(f.read())
-                f.close()
+                try:
+                    interpreter.run(f.read())
+                except Exception as e:
+                    print("An error occured:")
+                    print(e)
+                finally:
+                    f.close()
             elif command == "version":
                 print("Etch", etch.__version__, "running on", sys.platform, "(" + sys.implementation.name, ".".join([str(i) for i in sys.version_info[:3]]) + ").")
         else:

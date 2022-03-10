@@ -19,7 +19,7 @@ unicode_backport = ["unicodedata2"]
 
 [[package]]
 name = "etchlang"
-version = "0.0.2"
+version = "0.2.1"
 description = "Etch, an easy-to use, high-level, interpreted lang based on Python."
 category = "main"
 optional = false
@@ -104,8 +104,8 @@ charset-normalizer = [
     {file = "charset_normalizer-2.0.12-py3-none-any.whl", hash = "sha256:6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"},
 ]
 etchlang = [
-    {file = "etchlang-0.0.2-py3-none-any.whl", hash = "sha256:a0ced484b15d4c864e218913f990a1bf0d21d51e57e0e52fadea475105411fa3"},
-    {file = "etchlang-0.0.2.tar.gz", hash = "sha256:8aa6b8b416d5b400b0634a90f70c703ffe729a6a0e8828a4d7b542e2a28369dd"},
+    {file = "etchlang-0.2.1-py3-none-any.whl", hash = "sha256:cd669f6a0aa033a2e833186b8a754c0a69ac871c7fd5d22704bbc96fdafb7cf2"},
+    {file = "etchlang-0.2.1.tar.gz", hash = "sha256:e0e24df2df62c9851a194ddf81ae17f106df6dd224310eef8f7bfe9270d82980"},
 ]
 idna = [
     {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},

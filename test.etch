@@ -1,1 +1,1 @@
-:out "Hello";
+:out 1/0;
